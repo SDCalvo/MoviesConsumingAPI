@@ -3,7 +3,7 @@ import './Contacto.css';
 export default function Contacto (props){
     
     return (
-        <div className="container glass text-white rounded my-5">
+        <div className="container glass border text-white rounded my-5">
             <div className="row">
                 <div className="col-md-12 text-center my-5">
                     <h1>Contact</h1>
