@@ -28,7 +28,7 @@ export default function Home(){
         <>
             <div className="container">
                 <div className="row justify-content-center">
-                    <div className="text-center glass border text-white mt-3"><h1>Películas recomendadas</h1></div>
+                    <div className="text-center glass border text-white mt-3 p-2"><h1>Películas recomendadas</h1></div>
                     <div className="col-12 carousel-movies border glass p-5 m-5">
                         <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
                             <div className="carousel-inner">
@@ -39,7 +39,7 @@ export default function Home(){
                                                 <div className="p-4 rounded bg-dark">
                                                 <Link to={`/movies/${movie.imdbID}`}><img className="d-block w-100 carousel-img" src={movie?.Poster} alt="First slide"/></Link>
                                                 </div>
-                                                <h2 className="my-2">{movie?.Title}</h2>
+                                                <h2 className="my-4">{movie?.Title}</h2>
                                                 <h6 className="text-center">Year: {movie?.Year}</h6>
                                             </div>
                                         );
@@ -68,13 +68,9 @@ export default function Home(){
                                     //return a card for every movie
                                 <div key={movie.imdbID} className="card glass border search-card rounded m-3">
                                     <img className="card-img-top rounded my-2" src={movie.Poster} alt={movie.title}/>
-                                    <div className="card-body d-flex flex-column justify-content-center text-white rounded p-2 mt-1 mb-2">
-                                        <div>
-                                            <h6 className="card-title text-center">{movie.Title}</h6>
-                                        </div>
-                                        <div>
-                                            <p className="card-text text-center">{movie.Year}</p>  
-                                        </div>  
+                                    <div className="card-body d-flex flex-column justify-content-center text-white rounded py-0">
+                                        <h4 className="card-title text-center">{movie.Title}</h4>
+                                        <p className="card-text text-center">{movie.Year}</p>
                                     </div>
                                     <div className="card-footer text-center">
                                         <Link to={`/movies/${movie.imdbID}`} className="btn btn-success">See more</Link>
