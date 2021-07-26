@@ -22,7 +22,7 @@ export function Navbar(){
                 <Link onMouseEnter= {addAnimatedClass} onMouseLeave={removeAnimatedClass} className="link-navbar" to="/movies">Search</Link>
             </Nav.Item>
             <Nav.Item>
-                <Link onMouseEnter= {addAnimatedClass} onMouseLeave={removeAnimatedClass} className="link-navbar" to="/contacto">Contact</Link>
+                <Link onMouseEnter= {addAnimatedClass} onMouseLeave={removeAnimatedClass} className="link-navbar" to="/contacto">Contact/About</Link>
             </Nav.Item>
         </Nav>
     );

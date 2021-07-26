@@ -3,7 +3,7 @@ import './Contacto.css';
 export default function Contacto (props){
     
     return (
-        <div className="container glass border text-white rounded my-5">
+        <div className="container glass border text-white rounded mt-5 margin-bot">
             <div className="row">
                 <div className="col-md-12 text-center my-5">
                     <h1>Contact</h1>
@@ -20,6 +20,32 @@ export default function Contacto (props){
                     <h4>Santiago Calvo</h4>
                     <p>Phone: +5403815043542</p>
                     <p>Email: santiago.d.calvo@gmail.com</p>
+                </div>
+            </div>
+            <div className="row">
+                <div className="col-md-12 text-center my-5">
+                    <div className="bg-dark rounded p-3 text-center">
+                        <h1 className="glass p-3">About this project</h1>
+                        <p className="mt-5">
+                            This is a simple project for showcasing a movie webapp using React and Bootstrap, consuming OMDB API to get movie data.
+                            <br/>
+                            I've used the following technologies:
+                            <br/>
+                            <b>React</b>
+                            <br/>
+                            <b>Bootstrap</b>
+                            <br/>
+                            <b>Node.js</b>
+                            <br/>
+                            <b>HTML5</b>
+                            <br/>
+                            <b>CSS3</b>
+                            <br/>
+                            <b>ES6</b>
+                            <br/>
+                            <b>OMDB API</b>
+                        </p>
+                    </div>    
                 </div>
             </div>
         </div>
