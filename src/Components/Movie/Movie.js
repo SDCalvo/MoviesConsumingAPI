@@ -23,13 +23,15 @@ export default function Movie(){
 
     return(
         <div className="container mt-5 mar-bottom">
-            <div className="row my-5 justify-content-between glass p-5 rounded">
-                <div className="col-4 p-2 rounded d-flex justify-content-center">
-                    <img src={movie.Poster} alt={movie.Title}/>
+            <div className="row my-5 justify-content-between glass border p-5 rounded">
+                <div className="col-4 p-3 bg-dark rounded d-flex justify-content-center">
+                    <img className="rounded" src={movie.Poster} alt={movie.Title}/>
                 </div>
                 <div className="col-8 bg-dark rounded text-white p-3">
-                    <h1 className="text-center">{movie.Title}</h1>
-                    <h3 className="text-center">{movie.Year}</h3>
+                    <div className="glass-movie-title p-2 mb-2"> 
+                        <h1 className="text-center">{movie.Title}</h1>
+                        <h3 className="text-center">{movie.Year}</h3>
+                    </div>
                     <p className="text-justify py-3">{movie.Plot}</p>
                     <div className="d-flex justify-content-between">
                         <div >

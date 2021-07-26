@@ -27,7 +27,7 @@ export default function SearchMovie(){
 
     <>
         <div className="container margin-bot">
-            <div className="row glass p-3 my-5 rounded">
+            <div className="row glass border p-3 my-5 rounded">
                 <div className="col-md-12">
                     <form className="form-inline d-flex justify-content-between my-2 my-lg-0">
                         <input className="searchbox-bg text-white form-control w-75 mr-sm-2" value={searchValue} onChange={(e)=> handleChange(e)} type="search" placeholder="Search for a movie" aria-label="Search"/>
@@ -47,7 +47,7 @@ export default function SearchMovie(){
                                 moviePoster = movie.Poster;
                             }
                             return(
-                                <div key={movie.imdbID} className="card glass search-card rounded m-3">
+                                <div key={movie.imdbID} className="card glass border search-card rounded m-3">
                                     <img className="card-img-top rounded my-2" src={moviePoster} alt={movie.title}/>
                                     <div className="card-body d-flex flex-column justify-content-center text-white rounded p-2 mt-1 mb-2">
                                         <div>
@@ -63,7 +63,7 @@ export default function SearchMovie(){
                                 </div>
                             )    
                         }) :
-                        <div className="rounded m-3 p-5 glass searchbox-color">
+                        <div className="rounded m-3 p-5 glass border searchbox-color">
                             <div className="text-center">
                                 <h5 className="text-center">Movies found will be displayed here</h5>
                             </div>

@@ -2,3 +2,11 @@
 
     margin-bottom: 15rem;
 }
+
+.glass-movie-title{
+    background: #20776f42;
+    box-shadow: 0 8px 32px 0 rgba(24, 30, 109, 0.37);
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 10px;
+}

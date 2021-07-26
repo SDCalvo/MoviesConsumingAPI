@@ -1,0 +1,10 @@
+.carousel-img{
+
+    height: 30rem;
+    object-fit: contain;
+}
+
+.carousel-movies{
+
+    width: 50%;
+}
