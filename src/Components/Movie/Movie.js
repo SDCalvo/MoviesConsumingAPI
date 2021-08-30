@@ -1,4 +1,4 @@
-import {useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import './Movie.css'
 
@@ -6,7 +6,7 @@ import './Movie.css'
 
 export default function Movie(){
 
-    let {id} = useParams();
+    let { id } = useParams();
     
 
     const [movie, setMovie] = useState({});
