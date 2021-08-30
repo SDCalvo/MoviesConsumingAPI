@@ -11,7 +11,6 @@ export default function Contacto (props){
             </div>
             <div className="row">
                 <div className="col-md-12 d-flex justify-content-center align-items-center">
-                    <a className="mx-2" target="_blank" href="https://www.instagram.com/santiago.d.calvo/" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1024px-Instagram_logo_2016.svg.png" alt="Santiago Calvo" className="insta-icon" /></a>
                     <a className="mx-2" target="_blank" href="https://www.facebook.com" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Facebook_icon_2013.svg/2048px-Facebook_icon_2013.svg.png" alt="Santiago Calvo" className="facebook-icon" /></a>
                     <a className="mx-2" target="_blank" href="https://www.linkedin.com/in/santiago-d-calvo/" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Linkedin.svg/1200px-Linkedin.svg.png" alt="Santiago Calvo" className="facebook-icon" /></a>
                     <a className="mx-2" target="_blank" href="https://github.com/SDCalvo" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png" alt="Santiago Calvo" className="facebook-icon" /></a>    
