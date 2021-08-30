@@ -8,13 +8,13 @@ export default function Home(){
     const [explore, setExplore] = useState([]);
 
     useEffect(() => {
-        fetch(`http://www.omdbapi.com/?apikey=${process.env.REACT_APP_OMDBKEY}&s=` + 'movie')
+        fetch(`https://www.omdbapi.com/?apikey=${process.env.REACT_APP_OMDBKEY}&s=` + 'movie')
             .then(response => response.json())
             .then(res => {
                 if(res.Search) setCarousel(res.Search);
                 console.log(res);
             });
-        fetch(`http://www.omdbapi.com/?apikey=${process.env.REACT_APP_OMDBKEY}&s=` + 'film')
+        fetch(`https://www.omdbapi.com/?apikey=${process.env.REACT_APP_OMDBKEY}&s=` + 'film')
             .then(response => response.json())
             .then(res => {
                 if(res.Search) setExplore(res.Search);

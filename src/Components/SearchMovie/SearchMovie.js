@@ -11,7 +11,7 @@ export default function SearchMovie(){
     function handleSearch(e){
         e.preventDefault();
         
-        fetch(`http://www.omdbapi.com/?apikey=${process.env.REACT_APP_OMDBKEY}&s=` + searchValue)
+        fetch(`https://www.omdbapi.com/?apikey=${process.env.REACT_APP_OMDBKEY}&s=` + searchValue)
             .then(response => response.json())
             .then(res => {
                 if(res.Search) setMovies(res.Search);
@@ -41,7 +41,7 @@ export default function SearchMovie(){
                         movies.map((movie, index) => {
                             let moviePoster
                             if(movie.Poster === 'N/A'){
-                                moviePoster = 'http://linnea.com.ar/wp-content/uploads/2018/09/404PosterNotFound.jpg';
+                                moviePoster = 'https://linnea.com.ar/wp-content/uploads/2018/09/404PosterNotFound.jpg';
                             }
                             else{	
                                 moviePoster = movie.Poster;

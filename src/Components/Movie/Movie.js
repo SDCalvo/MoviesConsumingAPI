@@ -13,7 +13,7 @@ export default function Movie(){
 
     useEffect(() => {
         console.log(id)
-        fetch(`http://www.omdbapi.com/?apikey=${process.env.REACT_APP_OMDBKEY}&plot=full&i=` + id)
+        fetch(`https://www.omdbapi.com/?apikey=${process.env.REACT_APP_OMDBKEY}&plot=full&i=` + id)
         .then(res => res.json())
         .then(response => {
             setMovie(response);
